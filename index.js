@@ -7,25 +7,32 @@ var container3 = container.cloneNode(true); container3.className = "cont4";
 var container4 = container.cloneNode(true); container4.className = "cont5";
 var container5 = container.cloneNode(true); container5.className = "cont6";
 
+
+container5.style.marginLeft = "50px";
+container3.style.marginLeft = "50px";
+
 var $ = document.createElement("div");
 $.textContent = ":";
 
 $.style.width = "150px";
 $.style.marginTop = "-170px";
-$.style.marginLeft = "-60px";
+$.style.marginLeft = "-10px";
 $.style.color = "#500";
 $.style.fontSize = "500px";
 
 var $1 = $.cloneNode(true);
 
-// appending the clones into the body.
-document.body.appendChild(container1);
-document.body.appendChild($);
-document.body.appendChild(container2);
-document.body.appendChild(container3);
-document.body.appendChild($1);
-document.body.appendChild(container4);
-document.body.appendChild(container5);
+// the innner body
+var inner = document.querySelector("div.inner-body");
+
+// appending the clones into the inner body.
+inner.appendChild(container1);
+inner.appendChild($);
+inner.appendChild(container2);
+inner.appendChild(container3);
+inner.appendChild($1);
+inner.appendChild(container4);
+inner.appendChild(container5);
 
 
 // getting the segments.
@@ -50,27 +57,27 @@ function time(){
 function colors(x){
     switch (x){
         case 0:
-            return ["red","red","red","red","red","red","#500"];
+            return ["white","white","white","white","white","white","#000"];
         case 1:
-            return ["#500","#500","red","red","#500","#500","#500"];
+            return ["#000","#000","white","white","#000","#000","#000"];
         case 2:
-            return ["#500","red","#500","red","red","red","red"];
+            return ["#000","white","#000","white","white","white","white"];
         case 3:
-            return ["#500","#500","red","red","red","red","red"];
+            return ["#000","#000","white","white","white","white","white"];
         case 4:
-            return ["red","#500","red","red","#500","#500","red"];
+            return ["white","#000","white","white","#000","#000","white"];
         case 5:
-            return ["red","#500","red","#500","red","red","red"];
+            return ["white","#000","white","#000","white","white","white"];
         case 6:
-            return ["red","red","red","#500","red","red","red"];
+            return ["white","white","white","#000","white","white","white"];
         case 7:
-            return ["#500","#500","red","red","red","#500","#500"];
+            return ["#000","#000","white","white","white","#000","#000"];
         case 8:
-            return ["red","red","red","red","red","red","red"];
+            return ["white","white","white","white","white","white","white"];
         case 9:
-            return ["red","#500","red","red","red","red","red"];
+            return ["white","#000","white","white","white","white","white"];
         default:
-            return ["#500","#500","#500","#500","#500","#500","#500"];
+            return ["#000","#000","#000","#000","#000","#000","#000"];
     }
 }
 
