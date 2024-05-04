@@ -1,20 +1,25 @@
 body{
     background: #777;
-    display: flex;
-    margin: 200px 50px;
 }
 
-div{
-    width: 300px;
-    height: 500px;
+.inner-body{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25vh;
 }
+
+div.cs{
+    width: 250px;
+    height: 500px;
+    margin-left: 50px;
+}
+
 
 .seg{
     width: 40px;
     height: 150px;
-    background: darkred;
+    background: black;
     clip-path: polygon(0% 0%,100% 20%,100% 80%,0% 100%);
-    box-shadow: 120px 80px 40px 50px #0ff;
 }
 
 .a{
