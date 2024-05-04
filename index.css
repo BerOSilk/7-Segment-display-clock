@@ -1,0 +1,44 @@
+body{
+    background: #777;
+    display: flex;
+    margin: 200px 50px;
+}
+
+div{
+    width: 300px;
+    height: 500px;
+}
+
+.seg{
+    width: 40px;
+    height: 150px;
+    background: darkred;
+    clip-path: polygon(0% 0%,100% 20%,100% 80%,0% 100%);
+    box-shadow: 120px 80px 40px 50px #0ff;
+}
+
+.a{
+    rotate: 180deg;
+    margin-top: -150px;
+    margin-left: 150px;
+}
+
+.b{
+    margin-top: -300px;
+}
+
+.c{
+    rotate: 90deg;
+    margin-top: -210px;
+    margin-left: 75px;
+}
+
+.d{
+    rotate: -90deg;
+    margin-top: 125px;
+}
+
+.e{
+    margin-top: -290px;
+    clip-path: polygon(50% 0,100% 20%, 100% 80%,50% 100%,0% 80%, 0% 20%);
+}
